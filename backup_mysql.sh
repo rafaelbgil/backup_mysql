@@ -8,7 +8,7 @@ MYSQL_LISTAR_BANCOS="--skip-column-names -E"
 MYSQL_USUARIO=""
 MYSQL_SENHA=""
 MYSQL_PORTA="3306"
-MYSQL_OPCOES_BACKUP="--complete-insert --dump-date --routines --triggers --max_allowed_packet=2GB"
+MYSQL_OPCOES_BACKUP="--complete-insert --dump-date --routines --triggers --max_allowed_packet=2GB --single-transaction"
 DIRETORIO_BACKUP="/backup_mysql"
 DATA_ATUAL_FORMATO=$(date +%d%m%Y-%H%M)
 DIRETORIO_ATUAL_BACKUP="$DIRETORIO_BACKUP/$DATA_ATUAL_FORMATO/"
